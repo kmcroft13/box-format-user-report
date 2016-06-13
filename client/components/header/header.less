@@ -1,0 +1,50 @@
+@import '../../stylesheets/variables';
+@import '../../stylesheets/helpers';
+
+.header-wrapper {
+    height: 350px;
+    background: url('/images/background/box-office.png') 100% 100%;
+    transition: height 0.8s;
+
+    .ui.main.header {
+        font-size: 3em;
+        padding-top: 90px;
+        color: @secondaryFontColor;
+
+        > .sub.header {
+            color: @secondaryFontColorVariation;
+        }
+    }
+
+    a:hover {
+        color: @secondaryLinkHoverColor;
+    }
+
+    &.active {
+        height: 650px;
+    }
+
+    .form {
+      width: 300px;
+      text-align: center;
+    }
+}
+
+
+#main .login-wrapper {
+    max-width: @loginFormWidth;
+    margin: 2em auto 0 auto;
+    color: @secondaryFontColor;
+
+    .at-title .ui.header, label {
+        color: @secondaryFontColor;
+    }
+
+    .at-form {
+        padding: 1em;
+        background-color: rgba(0, 0,0, 0.5);
+        border-radius: 0.4em;
+        .ui.form .at-input.field > label { color: @secondaryFontColor; }
+    }
+
+}

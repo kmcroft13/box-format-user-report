@@ -1,0 +1,31 @@
+<template name="header">
+    <div class="center aligned header-wrapper">
+        <h1 class="huge center aligned main ui header">
+            Box User Report Auto-Format
+            <div class="sub header">
+                <a class="unstyled link" href="http://matteodem.github.io/meteor-boilerplate">find on GitHub</a>
+            </div>
+        </h1>
+        <form class="ui form login-wrapper">
+          <div class="ui error message">
+          </div>
+          <div class="field">
+            <input id="customerName" type="text" name="customerName" placeholder="Customer Name" autocomplete="off">
+          </div>
+          <div id="hiddenFormFields" class="hidden">
+            <div class="field">
+              <input type="text" name="customerEid" placeholder="Customer EID" autocomplete="off">
+            </div>
+            <div class="field">
+              <label>Upload Atlas Report</label>
+              <input type="file" class="basic inverted fluid ui button" name="csvUpload">
+            </div>
+
+            <button class="basic inverted ui button" type="submit">Create File</button>
+          </div>
+
+        </form>
+
+        <br>
+    </div>
+</template>
